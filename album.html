@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>作品展示</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="css/style.css" /> <!-- 共用的格式 -->
+        <link rel="stylesheet" href="css/album.css" /> <!-- 此頁專用的格式 -->
+        <link rel="stylesheet" href="css/normalize.css" />
+
+        <!-- AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    </head>
+    
+    <body>
+        <div class="container">
+
+            <div class="backToTopBtn">
+                <a href="#top"><img src="images/icon_Up.png"/></a>
+            </div>
+
+            <header class="header">
+            <img class="Kessoku_Band_Logo" src="images/Kessoku_Band_Logo.png" />
+
+            <div class="nav">
+                <div class="nav_list">
+                <a href="index.html" class="nav_list_item"><p>首頁</p></a>
+                <a href="member.html" class="nav_list_item"><p>成員介紹</p></a>
+                <a href="album.html" class="nav_list_item"><p>作品展示</p></a>
+
+                <div class="ctaBtn_Group">
+                    <a href="https://www.instagram.com/BTR_isosta/" class="btn_ig" target=”_blank”><img src="images/ico_insta.svg" alt="IG"
+                    /></a>
+                    <a href="https://x.com/BTR_anime" class="btn_x" target=”_blank”><img src="images/ico_x.svg" alt="X"
+                    /></a>
+                </div>
+                </div>
+            </div>
+            </header>
+            
+            <div class="main_content">
+
+                <!-- 主要內容寫在這邊 -->
+
+                <div class="banner">
+                    <h6>TV動畫專輯</h6>
+                    <h1>『結束バンド』</h1>
+
+                    <div class="album_info">
+                        <img  data-aos="flip-left" src="images/ph_kessokuband.jpg" />
+                        <ol>
+                            <li>青春コンプレックス</li>
+                            <li>ひとりぼっち東京</li>
+                            <li>Distortion‼</li>
+                            <li>ひみつ基地</li>
+                            <li>ギターと孤独と蒼い惑星</li>
+                            <li>ラブソングが歌えない</li>
+                            <li>あのバンド</li>
+                            <li>カラカラ</li>
+                            <li>小さな海</li>
+                            <li>なにが悪い</li>
+                            <li>忘れてやらない</li>
+                            <li>星座になれたら</li>
+                            <li>フラッシュバッカー</li>
+                            <li>転がる岩、君に朝が降る</li>
+                        </ol>  
+                    </div>
+
+                </div>
+                <hr class="banner_Line">
+
+                <div class="music_list">
+
+                    <div class="img_bg"></div>
+
+                    <h1>單曲展示</h1>
+
+                    <img src="images/ico_guitar.svg" />
+                    <div data-aos="fade-up">
+                        <iframe width="921" height="580" src="https://www.youtube.com/embed/B7BxrAAXl94?si=m0UXEIz8uNx51mKf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <img src="images/ico_drum.svg" />
+                    <div data-aos="fade-up">
+                        <iframe width="921" height="580" src="https://www.youtube.com/embed/gX9m-rCtSqc?si=jSZ46Ptk9Ce-Ltsv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </div>
+
+                    <img src="images/ico_bass.svg" />
+                    <div data-aos="fade-up">
+                        <iframe width="921" height="580" src="https://www.youtube.com/embed/L2i0i9gWE00?si=dK7eOk1gUJLeM4uP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </div>
+
+                    <img src="images/ico_guitar_mike.svg" />
+                    <div data-aos="fade-up">
+                        <iframe width="921" height="580" src="https://www.youtube.com/embed/wSTbdqo-j74?si=o0Gbe-HvAu0ZDFcA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+
+        <footer class="footer">
+            <p>© 結束バンド. All Rights Reserved.</p>
+        </footer>
+
+        <script>
+            AOS.init();
+        </script>
+
+    </body>
+</html>

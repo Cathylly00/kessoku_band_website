@@ -1,0 +1,112 @@
+
+/* ------------ 共用的格式 ------------ */
+
+html {
+	background-color: #000000;
+	box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+*,*:before,*:after {
+	box-sizing: inherit
+}
+
+
+body {
+	font-family: "Noto Sans TC", serif;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.backToTopBtn {
+    width: 48px;
+    height: 48px;
+    display: block;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    border: 3px solid #000000;
+    outline: none;
+    background-color: #FBFE56;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+}
+
+.backToTopBtn img { 
+    width: 50%;
+    height: auto;
+}
+
+/* Header */
+
+.header {
+    width: 100%;
+    height: 72px;
+    background-color: #FBFE56;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 8px;
+    padding-right: 37px;
+}
+
+.Kessoku_Band_Logo {
+    width: 64px;
+    height: 57px;
+}
+
+.nav {
+    width: 412px;
+    height: 33px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.nav_list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.nav_list_item {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+
+.ctaBtn_Group {
+    display: flex;
+    align-items: center;
+}
+
+.btn_ig,
+.btn_x {
+    width: 33px;
+    height: 33px;
+}
+
+.btn_ig {
+    margin-right: 24px;
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    height: 55px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #FBFE56;
+    align-content: center;
+}

@@ -1,0 +1,18 @@
+.header {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Header */
+
+.Kessoku_Band_Logo {
+    filter: invert(94%) sepia(25%) saturate(1181%) hue-rotate(349deg) brightness(113%) contrast(99%);
+}
+
+.nav_list_item {
+    color: #FBFE56;
+}
+
+.btn_ig img,
+.btn_x img{
+    filter: invert(94%) sepia(25%) saturate(1181%) hue-rotate(349deg) brightness(113%) contrast(99%);
+}
