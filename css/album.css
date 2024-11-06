@@ -63,6 +63,7 @@
 
 .music_list {
     padding-top: 107px;
+    padding-bottom: 135px;
     text-align: center;
     background-image: url("../images/Kessoku_Band_Logo_yellow.png");
     background-repeat: no-repeat;
@@ -83,10 +84,4 @@
 .music_list h1{
     color: #FBFE56;
     font-size: 64px;
-}
-
-/* Footer */
-
-.footer {
-    margin-top: 135px;
 }

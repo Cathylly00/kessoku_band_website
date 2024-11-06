@@ -30,7 +30,17 @@
 /* Content */
 
 .charater_list {
-    margin-top: 62px;
+    padding-top: 62px;
+    padding-bottom: 71px;
+    z-index: -5;
+    text-align: center;
+    background-image: url("../images/Kessoku_Band_Logo_yellow.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 1083px 968px;
+    background-color: rgba(0,0,0,0.85);
+    background-blend-mode: overlay;
 }
 
 .charater_list_item {
@@ -45,6 +55,7 @@
     height: 100%;
     width: auto;
     margin-left: 116px;
+    z-index: 5;
 }
 
 .info {
@@ -124,7 +135,6 @@
     top: 550px;
     left: 0;
     background-color: #FF6496;
-    z-index: -1;
 }
 
 .nizika_bg_box {
@@ -134,7 +144,6 @@
     top: 1350px;
     right: 0;
     background-color: #FABE00;
-    z-index: -1;
 }
 
 .ryo_bg_box {
@@ -144,7 +153,6 @@
     top: 2151px;
     left: 0;
     background-color: #006EBE;
-    z-index: -1;
 }
 
 .ikuyo_bg_box {
@@ -154,10 +162,4 @@
     top: 2953px;
     right: 0;
     background-color: #E60046;
-    z-index: -1;
-}
-
-/* Footer */
-.footer {
-    margin-top: 71px;
 }
