@@ -9,14 +9,16 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet"
-        />
+            rel="stylesheet"/>
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
         <link rel="stylesheet" href="css/style.css" /> <!-- 共用的格式 -->
         <link rel="stylesheet" href="css/member.css" /> <!-- 此頁專用的格式 -->
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
+        
         <!-- AOS -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -24,149 +26,202 @@
     </head>
     
     <body>
-        <div class="container">
+        <div class="main_body">
 
-            <a href="#top" class="backToTopBtn">
+            <a href="#top" class="backToTopBtn d-none">
                 <img src="images/Up Botton.png"/>
             </a>
 
             <!-- <button id="backToTopBtn" title="Go to top"><img src="images/ico_insta.svg"/></button> -->
 
-            <header class="header">
-            <img class="Kessoku_Band_Logo" src="images/Kessoku_Band_Logo.png" />
-
-            <div class="nav">
-                <div class="nav_list">
-                <a href="index.html" class="nav_list_item"><p>首頁</p></a>
-                <a href="member.html" class="nav_list_item"><p>成員介紹</p></a>
-                <a href="album.html" class="nav_list_item"><p>作品展示</p></a>
-
-                <div class="ctaBtn_Group">
-                    <a href="https://www.instagram.com/BTR_isosta/" class="btn_ig" target="_blank"><img src="images/svg/ico_insta.svg" alt="IG"/></a>
-                    <a href="https://x.com/BTR_anime" class="btn_x" target="_blank"><img src="images/svg/ico_x.svg" alt="X"/></a>
+            <nav class="navbar navbar-expand-lg header">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img class="Kessoku_Band_Logo" src="images/Kessoku_Band_Logo.png" /></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link" href="index.html">首頁</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="member.html">成員介紹</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="album.html">作品展示</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.instagram.com/BTR_isosta/" class="nav-link" target="_blank"><img src="images/svg/ico_insta.svg" alt="IG" class="btn_ig"/></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://x.com/BTR_anime" class="nav-link" target="_blank"><img src="images/svg/ico_x.svg" alt="X" class="btn_x"/></a>
+                        </li>
+                    </ul>
+                    </div>
                 </div>
-                </div>
-            </div>
-            </header>
+            </nav>
             
             <div class="main_content">
 
                 <!-- 主要內容寫在這邊 -->
 
-                <div class="banner">
-                    <h1>成員介紹</h1>
+                <div class="banner display-4">
+                    <h1  data-aos="fade-down">成員介紹</h1>
                 </div>
                 <hr class="banner_Line">
 
-                <div class="charater_list">
+                <div id="carouselExampleIndicators" class="carousel slide"  data-aos="fade-up">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
 
-                    <!-- 後藤一里 -->
-
-                    <div class="hitori_bg_box"></div>
-
-                    <div class="charater_list_item" data-aos="fade-right">
-                        <img class="img_character" src="images/charater_hitori.png" alt="hitori">
-                        <div class="info">
-                            <div class="chararter_title">
-                                <img class="music_icon" src="images/svg/ico_guitar.svg">
-                                <h1>後藤一里</h1>
+                        <!-- ---------------- 1 後藤一里 ----------------- -->
+                        <div class="carousel-item active">
+                            <div class="container charater_list_item">
+                                <div class="chararter_info pb-4 d-flex">
+                                    <div class="chararter_left_title">
+                                        <h1 class="char_name display-1">後 藤 一 里</h1>
+                                        <div class="cv_info text-center">
+                                            <img class="cv_img" src="./images/CV.png" alt="">
+                                            <p class="cv_name fs-3">青 山 吉 能</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <img class="img_character" src="images/charater_hitori.png" alt="hitori">
+                                    <div class="info">
+                                        <div class="chararter_title">
+                                            <img class="music_icon" src="images/svg/ico_guitar.svg">
+                                            <img class="music_post" src="./images/GUITAR.png" alt="">
+                                        </div>
+                                        <p class="me-4">
+                                            個性陰沉有溝通障礙，在加入樂團之前完全沒有朋友。希望能靠音樂讓他人認同自己，有時會因為過度的妄想或對事物的期待，而做出奇怪的發言與行為舉止。個人演奏時有不錯的實力，然而因不擅與人交往的個性，而在樂團中難以完全發揮，在影片網站OH!TUBE上以「吉他英雄」（guitarhero）的名義發佈吉他演奏影片之後小有名氣。
+                                            <br><br>
+                                            綽號是「小孤獨」（ぼっちちゃん，又譯小波奇），是涼為她取的。
+                                        </p>
+                                    </div>
+                                </div>
+                                <img src="./images/member_bg_01.jpg" class="member_bg"/>
                             </div>
-                            <p>
-                                負責主奏吉他與作詞。秀華高中1年2班。生日2月21日。血型O型。
-                                <br><br>
-                                個性陰沉有溝通障礙，在加入樂團之前完全沒有朋友，因為中學時聽到樂團的採訪，認為陰沉的人也可以在樂團發光發熱，從此每天苦練六小時吉他，希望能靠音樂讓他人認同自己，有時會因為過度的妄想或對事物的期待，而做出奇怪的發言與行為舉止。個人演奏時有不錯的實力，然而因不擅與人交往的個性，而在樂團中難以完全發揮，在影片網站OH!TUBE上以「吉他英雄」（guitarhero）的名義發佈吉他演奏影片之後小有名氣。故事開始時背著吉他獨自坐在公園時，被急尋吉他手的虹夏搭訕，陰錯陽差地被拉入樂團。
-                                <br><br>
-                                綽號是「小孤獨」（ぼっちちゃん，又譯小波奇），是涼為她取的。
-                            </p>
+                        </div>
+
+                        <!-- ---------------- 2 伊地知虹夏 ----------------- -->
+                        <div class="carousel-item">
+                            <div class="container charater_list_item">
+                                <div class="chararter_info pb-4 d-flex">
+                                    <div class="chararter_left_title">
+                                        <h1 class="char_name display-1">伊 地 知 虹 夏</h1>
+                                        <div class="cv_info text-center">
+                                            <img class="cv_img" src="./images/CV.png" alt="">
+                                            <p class="cv_name fs-3">鈴 代 紗 弓</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <img class="img_character" src="images/charater_nizika.png" alt="hitori">
+                                    <div class="info">
+                                        <div class="chararter_title">
+                                            <img class="music_icon" src="images/svg/ico_drum.svg">
+                                            <img class="music_post" src="./images/Drums.png" alt="">
+                                        </div>
+                                        <p class="me-4">
+                                            個性開朗，是負責統整樂團成員的人物。母親在9歲時因意外逝世，父親常年在外，基本上與姐姐一起生活。有很強的生活自理能力，在姊姊的影響下了解許多樂團相關的文化，為了完成自己的夢想而組成了團結Band。
+                                            <br><br>
+                                            在公園看到背著吉他的後藤一里而臨時拉她入團，在演出後雙方一拍即合正式成團。
+                                        </p>
+                                    </div>
+                                </div>
+                                <img src="./images/member_bg_02.jpg" class="member_bg"/>
+                            </div>
+                        </div>
+
+                        <!-- ---------------- 3 山田涼 ----------------- -->
+                        <div class="carousel-item">
+                            <div class="container charater_list_item">
+                                <div class="chararter_info pb-4 d-flex">
+                                    <div class="chararter_left_title">
+                                        <h1 class="char_name display-1">山 田 涼</h1>
+                                        <div class="cv_info text-center">
+                                            <img class="cv_img" src="./images/CV.png" alt="">
+                                            <p class="cv_name fs-3">水 野 朔</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <img class="img_character" src="images/charater_ryo.png" alt="hitori">
+                                    <div class="info">
+                                        <div class="chararter_title">
+                                            <img class="music_icon" src="images/svg/ico_bass.svg">
+                                            <img class="music_post" src="./images/Bass.png" alt="">
+                                        </div>
+                                        <p class="me-4">
+                                            冷靜瀟灑的無表情女孩，喜歡被以怪人稱呼，對音樂抱有執著，有著成熟精湛的音樂技術和相關知識。雖然家裡有錢，但總是購買昂貴的樂器而口袋空空並向人借錢，甚至吃草充飢。虹夏的摯友，說話大部分時間都是看氣氛隨口說的，時常編出千奇百怪的藉口拒絕別人的邀約，有時喜歡觀察和捉弄人。
+                                            <br><br>
+                                            過去曾組成的樂團在曲風失去個性走向大眾化後退團，之後在虹夏的邀約下才再次開始了音樂活動。
+                                        </p>
+                                    </div>
+                                </div>
+                                <img src="./images/member_bg_03.jpg" class="member_bg"/>
+                            </div>
+                        </div>
+
+                        <!-- ---------------- 4 長谷川育美 ----------------- -->
+                        <div class="carousel-item">
+                            <div class="container charater_list_item">
+                                <div class="chararter_info pb-4 d-flex">
+                                    <div class="chararter_left_title">
+                                        <h1 class="char_name display-1">喜 多 郁 代</h1>
+                                        <div class="cv_info text-center">
+                                            <img class="cv_img" src="./images/CV.png" alt="">
+                                            <p class="cv_name fs-3">青 山 吉 能</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <img class="img_character" src="images/charater_ikuyo.png" alt="hitori">
+                                    <div class="info">
+                                        <div class="chararter_title">
+                                            <img class="music_icon" src="images/svg/ico_guitar_mike.svg">
+                                            <img class="music_post" src="./images/Guitar & Vocal.png" alt="">
+                                        </div>
+                                        <p class="me-4">
+                                            擅於社交的女孩，是標準的現充，外表可愛，喜歡打扮與逛街，在跟人聊天交流時總是用極強的正能量面對他人。對涼抱有好感而一度加入團結Band，卻因為不會彈吉他而在Live前臨陣脫逃，爾後在一里的協助下，與其他成員和解，重新回到樂團中，並拜一里為師學習吉他。隨著演出經驗增加，其音樂實力逐漸跟上團員。
+                                        </p>
+                                    </div>
+                                </div>
+                                <img src="./images/member_bg_04.jpg" class="member_bg"/>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="line_box">
-                        <hr class="Line">
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <img class="chevron" src="./images/Chevron_Left.png" alt="">
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <img class="chevron" src="./images/Chevron_Right.png" alt="">
+                        <span class="visually-hidden">Next</span>
+                    </button>
 
-                    <!-- 伊地知虹夏 -->
+                </div>
 
-                    <div class="nizika_bg_box"></div>
-
-                    <div class="charater_list_item" data-aos="fade-left" style="flex-direction:row-reverse">
-                                                <img class="img_character" src="images/charater_nizika.png" alt="hitori">
-                        <div class="info">
-                            <div class="chararter_title">
-                                <img class="music_icon" src="images/svg/ico_drum.svg">
-                                <h1>伊地知虹夏</h1>
-                            </div>
-                            <p>
-                                擔任鼓手。下北澤高中二年級。生日5月29日。血型A型。
-                                <br><br>
-                                個性開朗，是負責統整樂團成員的人物。母親在9歲時因意外逝世，父親常年在外，基本上與姐姐一起生活。有很強的生活自理能力，在姊姊的影響下了解許多樂團相關的文化，為了完成自己的夢想而組成了團結Band。在公園看到背著吉他的後藤一里而臨時拉她入團，在演出後雙方一拍即合正式成團。
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="line_box">
-                        <hr class="Line">
-                    </div>
-
-                    
-                    <!-- 山田涼 -->
-
-                    <div class="ryo_bg_box"></div>
-
-                    <div class="charater_list_item" data-aos="fade-right">
-                        <img class="img_character" src="images/charater_ryo.png" alt="hitori">
-                        <div class="info">
-                            <div class="chararter_title">
-                                <img class="music_icon" src="images/svg/ico_bass.svg">
-                                <h1>山田涼</h1>
-                            </div>
-                            <p>
-                                負責貝斯與作曲。下北澤高中二年級。生日9月18日。血型AB型。
-                                <br><br>
-                                冷靜瀟灑的無表情女孩，喜歡被以怪人稱呼，對音樂抱有執著，有著成熟精湛的音樂技術和相關知識，喜歡逛唱片行和二手衣店的文青。氣質打扮帥氣，很受女孩子歡迎。父母經營醫院，是家中的獨生女，雖然家裡有錢，但總是購買昂貴的樂器而口袋空空並向人借錢，甚至吃草充飢。虹夏的摯友，雖然朋友不多，但比較偏向獨行俠而不是孤獨者，說話大部分時間都是看氣氛隨口說的，時常編出千奇百怪的藉口拒絕別人的邀約，有時喜歡觀察和捉弄人。
-                                <br><br>
-                                過去曾組成的樂團在曲風失去個性走向大眾化後退團，之後在虹夏的邀約下才再次開始了音樂活動。
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="line_box">
-                        <hr class="Line">
-                    </div>
-
-                    <!-- 喜多郁代 -->
-
-                    <div class="ikuyo_bg_box"></div>
-
-                    <div class="charater_list_item"  data-aos="fade-left"  style="flex-direction:row-reverse">
-                        <img class="img_character" src="images/charater_ikuyo.png" alt="hitori">
-                        <div class="info">
-                            <div class="chararter_title">
-                                <img class="music_icon" src="images/svg/ico_guitar_mike.svg">
-                                <h1>喜多郁代</h1>
-                            </div>
-                            <p>
-                                負責節奏吉他與主唱。秀華高中1年5班。生日4月21日。血型A型。
-                                <br><br>
-                                擅於社交的女孩，是標準的現充，外表可愛，喜歡打扮與逛街，在跟人聊天交流時總是用極強的正能量面對他人。對涼抱有好感而一度加入團結Band，卻因為不會彈吉他而在Live前臨陣脫逃，爾後在一里的協助下，與其他成員和解，重新回到樂團中，並拜一里為師學習吉他。隨著演出經驗增加，其音樂實力逐漸跟上團員。
-                            </p>
-                        </div>
-                    </div>
-
-                </div> <!-- charater_list -->
+                <!-- charater_list -->
 
                 
             </div> <!-- main_content -->
 
         </div> <!-- container -->
 
-        <footer class="footer">
+        <footer class="footer mt-4">
             <p>© 結束バンド. All Rights Reserved.</p>
         </footer>
 
         <script>
             AOS.init();
         </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         
     </body>
 </html>

@@ -6,6 +6,7 @@ html {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
+    width: 100%;
 }
 
 /* Header */
@@ -14,13 +15,89 @@ html {
     filter: invert(94%) sepia(25%) saturate(1181%) hue-rotate(349deg) brightness(113%) contrast(99%);
 }
 
+/* 下拉選單按鈕 */
+.nav_dropdown {
+    position: relative;
+}
+
+.dropdown_btn {
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #FBFE56;
+    cursor: pointer;
+}
+
+/* 隱藏的下拉選單 */
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    min-width: 120px;
+    z-index: 1;
+    right: 0;  /* 使選單靠右 */
+}
+
+/* 讓下拉選單中的清單項目置中對齊 */
+.dropdown_content a {
+    color: #FBFE56 !important;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    text-align: center;  /* 讓文字置中 */
+}
+
+.dropdown_content a:hover {
+    background-color: #FBFE56;
+    color: black !important;
+}
+
+.nav{
+    justify-content: flex-end;
+}
+
+.nav_list a {
+    text-decoration: none;
+}
+
 .nav_list_item {
     color: #FBFE56 !important;
+    font-size: large;
+    font-weight: bold;
+}
+
+.ctaBtn_Group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.ctaBtn_Group a {
+    display: inline-block;
+    justify-content: center;  /* 圖標水平居中 */
+    align-items: center;  /* 圖標垂直居中 */
+    transition: all 0.3s ease;  /* 添加過渡效果 */
+}
+
+.ctaBtn_Group a :hover{
+    filter: invert(0%) sepia(98%) saturate(9%) hue-rotate(164deg) brightness(106%) contrast(103%);
+}
+
+.ctaBtn_Group img {
+    width: 32px;
+    height: 32px;
+}
+
+/* 當點擊漢堡按鈕時，顯示下拉選單 */
+.nav_dropdown:hover .dropdown_content {
+    display: block;
 }
 
 .btn_ig img,
 .btn_x img{
     filter: invert(94%) sepia(25%) saturate(1181%) hue-rotate(349deg) brightness(113%) contrast(99%);
+    justify-content: center;
 }
 
 .banner_img{
@@ -158,12 +235,12 @@ h5{
 .decoration-image {
     position: absolute;
     height: 100%;
-    width: 1500px; /* 調整圖片的寬度 */
+    width: 100%; /* 調整圖片的寬度 */
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0.16; /* 半透明效果 */
-    z-index: -1; /* 使圖片位於文字下方 */
+    z-index: 1; /* 使圖片位於文字下方 */
     pointer-events: none; /* 確保圖片不影響文字點擊 */
 }
 
@@ -230,3 +307,129 @@ h5{
     opacity: 1; /* 滑鼠懸停時完全顯示 */
 }
 
+
+ /* RWD調整 */
+@media screen and (max-width: 888px) {
+    .news {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news_title {
+        margin-top: 0px; /* 調整間距 */
+        margin-bottom: 20px; /* 調整間距 */
+    }
+    .news_block {margin: 0; /* 讓內容貼合容器 */padding: 20px; /* 調整內間距 */}
+    .news_text {font-size: 16px !important; /* 縮小文字大小 */}
+
+    .band_icon_list { gap: 30px; /* 控制 icon 與圓點之間的間距 */}
+    .instru_icon{
+        height: auto;
+        width: 42px;
+    }
+    .dot {
+        width: 6px;  /* 圓點大小 */
+        height: 6px;
+    }
+
+    .bottom_button{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .button{ margin: 20px auto; }
+
+    h1 {font-size: 48px !important;  /* 可視需要縮小字體 */}
+    h4 {font-size: 24px;}
+    h5 {font-size: 20px;}
+    p {font-size: 18px !important; /* 縮小文字大小 */}
+}
+
+@media screen and (min-width: 481px) {
+    .nav_dropdown {
+        display: none;
+    }
+
+    .nav_list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav_list_item {
+        padding: 0 10px;
+    }
+
+    .ctaBtn_Group {
+        display: inline-block;
+        flex-direction: row;  /* 大尺寸下排列為水平 */
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav_list {display: none; /* 隱藏導航列表 */}
+
+    .menu {
+        display: block; /* 顯示菜單圖示 */
+        cursor: pointer;
+    }
+
+    .menu img {
+        width: 40px; /* 設定圖示大小 */
+        height: 40px;
+        filter: brightness(0) saturate(100%) invert(88%) sepia(63%) saturate(487%) hue-rotate(353deg) brightness(106%) contrast(102%)
+    }
+
+    .ctaBtn_Group {
+        flex-direction: column;  /* 小尺寸下排列為上下 */
+        justify-content: center;
+        align-items: center;  /* 使其在垂直方向上居中 */
+    }
+
+    .ctaBtn_Group a {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .news {flex-direction: column; /* 同樣垂直排列 */
+            margin: 60px 25px}
+    .news_block { padding: 15px; /* 減少內間距 */}
+    .band_icon_list { gap: 15px; /* 控制 icon 與圓點之間的間距 */}
+    .band_text_container { width: 130%;}
+    .instru_icon{
+        height: auto;
+        width: 34px;
+    }
+    .dot {
+        width: 4px;  /* 圓點大小 */
+        height: 4px;
+    }
+
+    h1 {font-size: 30px !important;  /* 可視需要縮小字體 */}
+    h4 {font-size: 16px;}
+    h5 {font-size: 14px;}
+    p {font-size: 12px !important; /* 縮小文字大小 */}
+
+}
+
+.arrowDown {
+    width: 120px;
+    animation: arrow-bounce 1.5s infinite;
+}
+@media screen and (max-width: 768px) {
+    .arrowDown {
+        width: 70px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .scroll-down-container {
+        display: none;
+    }
+}
+
+.scroll-down-container {
+    position: absolute;
+    bottom: 10%;
+    left: 45%;
+}

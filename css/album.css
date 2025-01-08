@@ -2,45 +2,47 @@
     width: 100%;
     height: 837px;
     text-align: center;
-    align-content: center;
     background-image: url("../images/album_Banner.png");
     background-color: rgba(0,0,0,0.65);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: overlay;
+    padding-bottom: 5rem;
 }
 
 .banner h6 {
     color: #93F7FA;
-    font-size: 24px;
+    font-size: 26px;
     margin-top: 23px;
     margin-bottom: 20px;
 }
 
 .banner h1 {
     color: #FBFE56;
-    font-size: 64px;
     font-weight: bolder;
     margin-top: 0px;
-    margin-bottom: 42px;
+    margin-bottom: 30px;
 }
 
 .album_info {
-    height: 528px;
+    height: 500px;
     display: flex;
     justify-content: center;
-    margin-bottom: 42px;
+    margin-bottom: 0px;
+    padding: 0;
 }
 
 .album_info img {
     width: auto;
-    height: 100%;
+    height: 90%;
     margin-right: 70px;
+    align-self: center;
 }
 
 .album_info ol {
-    height: 100%;
+    height: max-content;
+    margin-bottom: 0;
 }
 
 .album_info li {
@@ -49,6 +51,13 @@
     color: #F5F5F5;
     font-size: 24px;
     font-weight: 400;
+    width: fit-content;
+}
+
+.album_info li:hover {
+    color: black;
+    background-color: #FBFE56;
+    font-weight: bold;
 }
 
 .banner_Line {
@@ -62,8 +71,8 @@
 /* Music */
 
 .music_list {
-    padding-top: 107px;
-    padding-bottom: 135px;
+    padding-top: 20px;
+    padding-bottom: 25px;
     text-align: center;
     background-image: url("../images/Kessoku_Band_Logo_yellow.png");
     background-repeat: no-repeat;
@@ -76,12 +85,215 @@
 
 .music_list img{
     width: auto;
-    height: 65px;
-    margin-top: 75px;
-    margin-bottom: 75px;
+    height: 45px;
+    margin-right: 2%;
 }
 
 .music_list h1{
     color: #FBFE56;
-    font-size: 64px;
+}
+
+iframe {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    z-index: 5;
+}
+
+.song1_bg {
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    width: 800px;
+    height: 500px;
+    z-index: 1;
+    background-color: #FF6496;
+}
+
+.song2_bg {
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    width: 800px;
+    height: 500px;
+    z-index: 1;
+    background-color: #FABE00;
+}
+
+
+.song3_bg {
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    width: 800px;
+    height: 500px;
+    z-index: 1;
+    background-color: #006EBE;
+}
+
+
+.song4_bg {
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    width: 800px;
+    height: 500px;
+    z-index: 1;
+    background-color: #E60046;
+}
+
+
+.song_info {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.song_name {
+    color: #F5F5F5;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+@media screen and (max-width: 1200px) {
+    
+}
+@media screen and (max-width: 992px) {
+    .banner {
+        height: 650px;
+    }
+    .banner h6 {
+        font-size: 20px;
+    }
+    .album_info {
+        height: 400px;
+    }
+    .album_info li {
+        line-height: 27px;
+        font-size: 20px;
+    }
+    .song1_bg,
+    .song2_bg,
+    .song3_bg,
+    .song4_bg,
+    iframe {
+        width: 700px;
+        height: 440px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .banner {
+        height: 550px;
+    }
+    .banner h6 {
+        font-size: 16px;
+    }
+    .album_info {
+        height: 310px;
+    }
+    .album_info img{
+        margin-right: 50px;
+    }
+    .album_info li {
+        line-height: 22px;
+        font-size: 15px;
+    }
+    .song1_bg,
+    .song2_bg,
+    .song3_bg,
+    .song4_bg,
+    iframe {
+        width: 422px;
+        height: 265px;
+    }
+    .music_list img{
+        height: 35px;
+    }
+    .song_name {
+        font-size: x-large;
+    }
+}
+@media screen and (max-width: 576px) {
+    .banner {
+        height: 900px;
+    }
+    .banner h6 {
+        font-size: 16px;
+    }
+    .album_info {
+        height: fit-content;
+        display: block;
+    }
+    .album_info img{
+        margin-right: 0px;
+        height: 300px;
+    }
+    .album_info ol {
+        margin-top: 5%;
+        text-align: center;
+        display: grid;
+        justify-content: center;
+    }
+    .album_info li {
+        line-height: 25px;
+        font-size: 18px;
+    }
+    .song1_bg,
+    .song2_bg,
+    .song3_bg,
+    .song4_bg,
+    iframe {
+        width: 350px;
+        height: 220px;
+    }
+    .music_list img{
+        height: 25px;
+    }
+    .song_name {
+        font-size: large;
+    }
+    .scroll-down-container {
+        display: none;
+    }
+}
+@media screen and (max-width: 360px) {
+    .banner {
+        height: 700px;
+    }
+    .banner h6 {
+        font-size: 16px;
+    }
+    .album_info {
+        height: fit-content;
+        display: block;
+    }
+    .album_info img{
+        margin-right: 0px;
+        height: 220px;
+    }
+    .album_info ol {
+        margin-top: 5%;
+        text-align: center;
+        display: grid;
+        justify-content: center;
+    }
+    .album_info li {
+        line-height: 20px;
+        font-size: 13px;
+    }
+    .song1_bg,
+    .song2_bg,
+    .song3_bg,
+    .song4_bg,
+    iframe {
+        width: 250px;
+        height: 157px;
+    }
+    .music_list img{
+        height: 20px;
+    }
+    .song_name {
+        font-size: medium;
+    }
 }

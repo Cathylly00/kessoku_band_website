@@ -12,6 +12,9 @@
             rel="stylesheet"
         />
 
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
         <link rel="stylesheet" href="css/style.css" /> <!-- 共用的格式 -->
         <link rel="stylesheet" href="css/album.css" /> <!-- 此頁專用的格式 -->
         <link rel="stylesheet" href="css/normalize.css" />
@@ -24,57 +27,77 @@
     </head>
     
     <body>
-        <div class="container">
+        <div class="main_body">
 
-            <a href="#top" class="backToTopBtn">
+            <a href="#top" class="backToTopBtn d-none">
                 <img src="images/Up Botton.png"/>
             </a>
 
-            <header class="header">
-            <img class="Kessoku_Band_Logo" src="images/Kessoku_Band_Logo.png" />
-
-            <div class="nav">
-                <div class="nav_list">
-                <a href="index.html" class="nav_list_item"><p>首頁</p></a>
-                <a href="member.html" class="nav_list_item"><p>成員介紹</p></a>
-                <a href="album.html" class="nav_list_item"><p>作品展示</p></a>
-
-                <div class="ctaBtn_Group">
-                    <a href="https://www.instagram.com/BTR_isosta/" class="btn_ig" target="_blank"><img src="images/svg/ico_insta.svg" alt="IG"
-                    /></a>
-                    <a href="https://x.com/BTR_anime" class="btn_x" target="_blank"><img src="images/svg/ico_x.svg" alt="X"
-                    /></a>
+            <nav class="navbar navbar-expand-lg header">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img class="Kessoku_Band_Logo" src="images/Kessoku_Band_Logo.png" /></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link" href="index.html">首頁</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="member.html">成員介紹</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="album.html">作品展示</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.instagram.com/BTR_isosta/" class="nav-link" target="_blank"><img src="images/svg/ico_insta.svg" alt="IG" class="btn_ig"/></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://x.com/BTR_anime" class="nav-link" target="_blank"><img src="images/svg/ico_x.svg" alt="X" class="btn_x"/></a>
+                        </li>
+                    </ul>
+                    </div>
                 </div>
-                </div>
-            </div>
-            </header>
+            </nav>
             
-            <div class="main_content">
+            <div class="main_content" id="main_content">
 
                 <!-- 主要內容寫在這邊 -->
 
                 <div class="banner">
-                    <h6>TV動畫專輯</h6>
-                    <h1>『結束バンド』</h1>
 
-                    <div class="album_info">
-                        <img  data-aos="flip-left" src="images/ph_kessokuband.jpg" />
-                        <ol>
-                            <li>青春コンプレックス</li>
-                            <li>ひとりぼっち東京</li>
-                            <li>Distortion‼</li>
-                            <li>ひみつ基地</li>
-                            <li>ギターと孤独と蒼い惑星</li>
-                            <li>ラブソングが歌えない</li>
-                            <li>あのバンド</li>
-                            <li>カラカラ</li>
-                            <li>小さな海</li>
-                            <li>なにが悪い</li>
-                            <li>忘れてやらない</li>
-                            <li>星座になれたら</li>
-                            <li>フラッシュバッカー</li>
-                            <li>転がる岩、君に朝が降る</li>
-                        </ol>  
+                    <div class="d-flex justify-content-center">
+                        <div class="row">
+                            <h6 class="col-12">TV動畫專輯</h6>
+                            <h1 class="col-12 display-2">『結束バンド』</h1>
+
+                            <div class="album_info">
+                                <div class="box col-sm-1 "></div>
+                                <img class="col-sm-5" data-aos="flip-left" src="images/ph_kessokuband.jpg" />
+                                <ol class="col-sm-4">
+                                    <li>青春コンプレックス</li>
+                                    <li>ひとりぼっち東京</li>
+                                    <li>Distortion‼</li>
+                                    <li>ひみつ基地</li>
+                                    <li>ギターと孤独と蒼い惑星</li>
+                                    <li>ラブソングが歌えない</li>
+                                    <li>あのバンド</li>
+                                    <li>カラカラ</li>
+                                    <li>小さな海</li>
+                                    <li>なにが悪い</li>
+                                    <li>忘れてやらない</li>
+                                    <li>星座になれたら</li>
+                                    <li>フラッシュバッカー</li>
+                                    <li>転がる岩、君に朝が降る</li>
+                                </ol>  
+                            </div>
+
+                            <div class="scroll-down-container col-12">
+                                <img  class="arrowDown" src="./images/Chevron Down.png" alt="">
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -82,24 +105,83 @@
 
                 <div class="music_list">
 
-                    <h1>單曲展示</h1>
+                    <h1 style="margin-top: 10px;"  class="fw-bolder display-2">單曲展示</h1>
 
-                    <img src="images/svg/ico_guitar.svg" />
-                    <div data-aos="fade-up">
-                        <iframe width="921" height="580" src="https://www.youtube.com/embed/B7BxrAAXl94?si=m0UXEIz8uNx51mKf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container song_info">
+                                <div class="song1_bg"></div>
+                                <iframe src="https://www.youtube.com/embed/B7BxrAAXl94?si=m0UXEIz8uNx51mKf" 
+                                    title="YouTube video player" frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                </iframe>
+                                <div class="d-flex justify-content-end mt-4">
+                                    <img src="images/svg/ico_guitar.svg" />
+                                    <p class="song_name">ギターと孤独と蒼い惑星</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container song_info">
+                                <div class="song2_bg"></div>
+                                <iframe src="https://www.youtube.com/embed/gX9m-rCtSqc?si=jSZ46Ptk9Ce-Ltsv"
+                                    title="YouTube video player" frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                </iframe>
+                                <div class="d-flex justify-content-end mt-4">
+                                    <img src="images/svg/ico_drum.svg" />
+                                    <p class="song_name">忘れてやらない</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container song_info">
+                                <div class="song3_bg"></div>
+                                <iframe src="https://www.youtube.com/embed/L2i0i9gWE00?si=dK7eOk1gUJLeM4uP" 
+                                    title="YouTube video player" frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                </iframe>
+                                <div class="d-flex justify-content-end mt-4">
+                                    <img src="images/svg/ico_bass.svg" />
+                                    <p class="song_name">あのバンド</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="container song_info">
+                                <div class="song4_bg"></div>
+                                <iframe src="https://www.youtube.com/embed/wSTbdqo-j74?si=o0Gbe-HvAu0ZDFcA" 
+                                    title="YouTube video player" frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                </iframe>
+                                <div class="d-flex justify-content-end mt-4">
+                                    <img src="images/svg/ico_guitar_mike.svg" />
+                                    <p class="song_name">星座になれたら</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <img class="chevron" src="./images/Chevron_Left.png" alt=""/>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <img class="chevron" src="./images/Chevron_Right.png" alt=""/>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-
-                    <img src="images/svg/ico_drum.svg" />
-                    <div data-aos="fade-up">
-                        <iframe width="921" height="580" src="https://www.youtube.com/embed/gX9m-rCtSqc?si=jSZ46Ptk9Ce-Ltsv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </div>
-
-                    <img src="images/svg/ico_bass.svg" />
-                    <div data-aos="fade-up">
-                        <iframe width="921" height="580" src="https://www.youtube.com/embed/L2i0i9gWE00?si=dK7eOk1gUJLeM4uP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </div>
-
-                    <img src="images/svg/ico_guitar_mike.svg" />
-                    <div data-aos="fade-up">
-                        <iframe width="921" height="580" src="https://www.youtube.com/embed/wSTbdqo-j74?si=o0Gbe-HvAu0ZDFcA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </div>
 
                 </div>
                 
@@ -114,6 +196,18 @@
         <script>
             AOS.init();
         </script>
+
+        <script>
+            // Auto-scroll to the target section when the page loads
+                window.onload = function () {
+                const target = document.getElementById('main_content');
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            };
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     </body>
 </html>

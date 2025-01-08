@@ -28,6 +28,20 @@
             <img class="Kessoku_Band_Logo" src="images/Kessoku_Band_Logo.png" />
 
             <div class="nav">
+                <!-- 預設是隱藏的下拉選單 -->
+                <div class="nav_dropdown">
+                    <button class="dropdown_btn">&#9776;</button> <!-- 漢堡選單圖示 -->
+                    <div class="dropdown_content">
+                        <a href="index.html" class="nav_list_item"><p>首頁</p></a>
+                        <a href="member.html" class="nav_list_item"><p>成員介紹</p></a>
+                        <a href="album.html" class="nav_list_item"><p>作品展示</p></a>
+                        <div class="ctaBtn_Group">
+                            <a href="https://www.instagram.com/BTR_isosta/" class="btn_ig" target="_blank"><img src="images/svg/ico_insta.svg" alt="IG" /></a>
+                            <a href="https://x.com/BTR_anime" class="btn_x" target="_blank"><img src="images/svg/ico_x.svg" alt="X" /></a>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="nav_list">
                 <a href="index.html" class="nav_list_item"><p>首頁</p></a>
                 <a href="member.html" class="nav_list_item"><p>成員介紹</p></a>
@@ -39,13 +53,22 @@
                     <a href="https://x.com/BTR_anime" class="btn_x" target="_blank"><img src="images/svg/ico_x.svg" alt="X"
                     /></a>
                 </div>
+
                 </div>
+
             </div>
             </header>
             
             <div class="main_content"> <!-- 主要內容寫在這邊 -->
 
-                <img class="banner_img" src="images/banner_img.png" />
+                <div style="height: 100%; width: 100%; position: relative;">
+                    <img class="banner_img" src="images/banner_img.png"> 
+                        <div class="scroll-down-container">
+                            <img  class="arrowDown" src="./images/Chevron Down.png" alt="">
+                        </div>
+                    </img>
+                    
+                </div>
 
                 <div class="news">
                     
